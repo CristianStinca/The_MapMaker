@@ -1,8 +1,8 @@
-export function getBoardElements() {
+function getBoardElements() {
     return elements;
 }
 
-export const TERRAIN = {
+const TERRAIN = {
     EMPTY_TYPE : "empty",
     MOUNTAIN_TYPE : "mountain",
     FOREST_TYPE : "forest",
