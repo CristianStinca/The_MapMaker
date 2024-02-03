@@ -1,0 +1,317 @@
+* {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-color: cornsilk;
+    /* background-image: url(img/Flag_of_Moldova.svg.png);
+    background-size: cover;
+    opacity: 0.9; */
+}
+
+.container {
+    /* width: 500px; */
+    margin: 50px 10%;
+}
+
+#mainmenu_container {
+    padding: 50px;
+    width: 500px;
+    margin: auto;
+    background-color: lightgray;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+#mainmenu_container>h1 {
+    text-align: center;
+}
+
+#mainmenu_container>button {
+    height: 50px;
+    border-radius: 5px;
+    border: 3px solid black;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.disable {
+    display: none;
+}
+
+#gamepage {
+    height: 600px;
+}
+
+#gamepage_container {
+    display: flex;
+    gap: 20px;
+}
+/* 
+#gamepage_container>* {
+    background-color: aquamarine;
+} */
+
+hr {
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    border-width: 0;
+    margin: 0;
+}
+
+#endmenu {
+    z-index: 600;
+    position: absolute;
+    top: 100px;
+    left: calc(50% - 300px);
+}
+
+#endmenu h2 {
+    text-align: center;
+}
+
+
+
+/* board */
+
+#board_container {
+    width: 100%;
+    flex-grow: 1;
+}
+
+#board_container>h2 {
+    font-size: xx-large;
+    margin: 10px 0;
+}
+
+#board {
+    width: 100%;
+    aspect-ratio: 1;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#board_table {
+    width: 100%;
+    aspect-ratio: 1;
+    padding: 5px;
+}
+
+#board_table td {
+    background-position: center;
+    background-size: cover;
+}
+
+/* game data */
+
+#gamedata {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+
+#gamedata>div {
+    display: flex;
+    gap: 10px;
+}
+
+#seasons {
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+#missions {
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+#cur_element_container {
+    flex-direction: row;
+    /* justify-content: space-between; */
+    flex-grow: 100;
+    display: inline-block;
+}
+
+#seasons_container {
+    /* height: 100%; */
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+h3 {
+    margin: 0;
+}
+
+#seasons_container>div {
+    width: 100%;
+    aspect-ratio: 1;
+    border: 3px solid black;
+    border-radius: 10px;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+}
+
+#spring {
+    background-color: greenyellow;
+}
+
+#summer {
+    background-color: yellow;
+}
+
+#autumn {
+    background-color: orange;
+}
+
+#winter {
+    background-color: lightskyblue;
+}
+
+#missions>h3 {
+    margin: 0;
+}
+
+.missionsgr {
+    display: flex;
+    gap: 10px;
+}
+
+.mission {
+    /* background-image: url("img/assignment_assets/assets/missions_eng/Group 69.png"); */
+    width: 100%;
+    aspect-ratio: 3509 / 1174;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.mission_info {
+    position: absolute;
+    color: white;
+    bottom: 7px;
+    right: 10px;
+    font-size: smaller;
+}
+
+.activity {
+    height: 1em;
+}
+
+#cur_element {
+    position: relative;
+    height: 100%;
+    aspect-ratio: 1;
+    border: 3px solid black;
+    border-radius: 20px;
+    background-color: rgb(240, 240, 240);
+}
+
+#controls {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-right: 10px;
+    justify-content: space-between;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#buttons>button {
+    width: 100%;
+    height: 40px;
+    border: 3px solid black;
+    /* border-width: 0; */
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+#control_buttons_container {
+    display: flex;
+    gap: 20px;
+}
+
+#restart, #tomainmenu, #save {
+    margin-top: 20px;
+    width: 100%;
+    height: 40px;
+    border: 3px solid black;
+    /* border-width: 0; */
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+#cur_element_price {
+    position: absolute;
+    display: flex;
+    align-items: baseline;
+    gap: 3px;
+    top: 10px;
+    left: 13px;
+    box-shadow: 0 30px 40px rgba(0,0,0,.1);
+}
+
+#cur_element_price_value {
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+#cur_element_image_container {
+    /* margin: 20px; */
+    margin: 15% 5% 5% 15%;
+}
+
+#cur_element_table {
+    /* border: 1px solid black; */
+    width: 100%;
+    aspect-ratio: 1;
+    /* border-collapse: collapse; */
+}
+
+/* #cur_element_table * {
+    border: 1px solid black;
+} */
+
+#cur_element_table td {
+    /* background-image: url("img/set-glyph-square-clocks/Set\ of\ Glyph\ Square\ Clocks.jpg"); */
+    background-position: center;
+    background-size: cover;
+}
+
+#object {
+    margin: 0;
+    padding: 0.5em;
+    border: solid 0.5em #FF0000; 
+    background: #000;
+  }
+
+#close_end_menu_button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    aspect-ratio: 1;
+    border: 3px black solid;
+    border-radius: 5px;
+    background-image: url("img/close_icon.png");
+    background-position: center;
+    background-size: cover;
+}
+
+#endmenu_container {
+    position: relative;
+}

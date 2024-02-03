@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The MapMaker</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <div id="mainmenu">
+            <div id="mainmenu_container">
+                <h1>The MapMaker</h1>
+                <button id="startBasicButton">Start basic</button>
+                <button id="startExpandedButton">Start expanded</button>
+            </div>
+        </div>
+        <div id="gamepage" class="disable">
+            <div id="gamepage_container">
+                <div id="board_container">
+                    <h2>Potato map</h2>
+                    <div id="board">
+                        <table id="board_table"></table>
+                    </div>
+                </div>
+                <div id="gamedata">
+                    <div id="seasons">
+                        <h3>Total: <span id="total_points">0</span> points</h3>
+                        <div id="seasons_container">
+                            <div id="spring"><div style="margin-top: calc(100%/4);">Spring:<br> <span class="season_counter">0</span> points</div></div>
+                            <div id="summer"><div style="margin-top: calc(100%/4);">Summer:<br> <span class="season_counter">0</span> points</div></div>
+                            <div id="autumn"><div style="margin-top: calc(100%/4);">Autumn:<br> <span class="season_counter">0</span> points</div></div>
+                            <div id="winter"><div style="margin-top: calc(100%/4);">Winter:<br> <span class="season_counter">0</span> points</div></div>
+                        </div>
+                        <h3>Current season: <span id="curr_season">Spring</span></h3>
+                    </div>
+                    <hr>
+                    <div id="missions">
+                        <h3>Missions: </h3>
+                        <div class="missionsgr">
+                            <div class="mission">
+                                <div class="mission_info">
+                                    ( <span class="mission_counter">0</span> points ) <span style="font-size: larger; font-weight: bold;">A</span> <img src="img/activity_indicator.svg" alt="" class="activity">
+                                </div>
+                            </div>
+                            <div class="mission">
+                                <div class="mission_info">
+                                    ( <span class="mission_counter">0</span> points ) <span style="font-size: larger; font-weight: bold;">B</span> <img src="img/activity_indicator.svg" alt="" class="activity">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="missionsgr">
+                            <div class="mission">
+                                <div class="mission_info">
+                                    ( <span class="mission_counter">0</span> points ) <span style="font-size: larger; font-weight: bold;">C</span> <img src="img/activity_indicator.svg" alt="" class="activity disable">
+                                </div>
+                            </div>
+                            <div class="mission">
+                                <div class="mission_info">
+                                    ( <span class="mission_counter">0</span> points ) <span style="font-size: larger; font-weight: bold;">D</span> <img src="img/activity_indicator.svg" alt="" class="activity disable">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div id="elapsed_time"><h3>Elapsed time in current season: <span id="current_season_counter">0</span>/7</h3></div>
+                    <hr>
+                    <div id="cur_element_container">
+                        <div id="controls">
+                            <h3>Current element: </h3>
+                            <div id="buttons">
+                                <button id="rotate">Rotate</button>
+                                <button id="flip">Flip</button>
+                            </div>
+                        </div>
+                        <div id="cur_element">
+                            <div id="cur_element_price">
+                                <div id="cur_element_price_value">2</div>
+                                <img src="img/clock.svg" alt="">
+                            </div>
+                            <div id="cur_element_image_container">
+                                <table id="cur_element_table">
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr style="margin-top: 20px;">
+            <div id="control_buttons_container">
+                <button id="restart">Restart</button>
+                <button id="tomainmenu">Main menu</button>
+            </div>
+        </div>
+        <div id="endmenu" class="disable">
+            <div id="mainmenu_container" id="endmenu_container">
+                <div id="close_end_menu_button"></div>
+                <h1>Congratulations!</h1>
+                <h2>Total: <span id="end_points_count">0</span></h2>
+                <button id="toMainMenuButton">Main menu</button>
+                <button id="restartButton">Restart</button>
+            </div>
+        </div>
+    </div>
+    <div id="shade_courtain" class="disable" style="background-color: black; opacity: 0.3; width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 500;"></div>
+    <script src="main.js"></script>
+</body>
+</html>
