@@ -1,7 +1,10 @@
 # The MapMaker
 A single player, tetris-like game. Inspired from the board game "Cartographers". 
 
-### How to start the project?
+### How to run the project?
+Just access the [link](https://cristianstinca.github.io/The_MapMaker/). (cristianstinca.github.io/The_MapMaker)
+
+### How to run the project locally?
 No pre-installs needed. Just download all the files, run the index.html and the game will open in your default browser.
 
 ### How to play?
